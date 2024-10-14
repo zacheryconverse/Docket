@@ -1,0 +1,110 @@
+:root {
+  --primary-color: #1f8bff;
+  --faded-primary-color: rgba(31, 139, 255, 0.5);
+  --todo-item-color: #7688ad;
+  --outline-color: #99589e;
+  --todo-app-width: 300px;
+  --todo-button-height: 44px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button,
+input {
+  cursor: pointer;
+}
+
+button:focus,
+input:focus {
+  outline: 2px solid var(--outline-color);
+  outline-offset: 2px;
+}
+
+.todo-app {
+  text-align: center;
+}
+
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-submit {
+  color: white;
+  background-color: var(--primary-color);
+  height: var(--todo-button-height);
+  width: var(--todo-app-width);
+  margin: 10px;
+}
+
+.todo-input-field {
+  height: var(--todo-button-height);
+  width: var(--todo-app-width);
+  padding: 0 10px;
+}
+
+.todo-input-field.input-error {
+  border: 2px solid red;
+}
+
+.error-message {
+  color: red;
+}
+
+.reset-button {
+  color: white;
+  height: var(--todo-button-height);
+  width: var(--todo-app-width);
+  background-color: var(--primary-color);
+}
+
+.reset-button:disabled,
+.todo-submit:disabled {
+  cursor: not-allowed;
+  background-color: var(--faded-primary-color);
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-item {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--todo-item-color);
+  height: var(--todo-button-height);
+  width: var(--todo-app-width);
+  margin: 2px;
+}
+
+.todo-checkbox {
+  margin: 0 10px;
+  height: 20px;
+  width: 20px;
+}
+
+.todo-button {
+  color: white;
+  background-color: var(--primary-color);
+  height: var(--todo-button-height);
+  width: 50px;
+  padding: 5px;
+}
