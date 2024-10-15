@@ -3,6 +3,7 @@ node_modules/
 # Build files
 build/
 dist/
+package-lock.json
 
 # IDE/Editor files
 .vscode/
