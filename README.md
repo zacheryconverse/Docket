@@ -2,19 +2,6 @@
 
 A simple React-based Todo application that allows users to add, display, and delete todos.
 
-## Design Decisions
-
-This code sample is intentionally kept short to align with the interview guidelines, which suggest keeping submissions concise and easy to review. I wanted to demonstrate the core functionality effectively within these constraints.
-
-If I had more freedom to expand, I would have:
-
-- Added more comprehensive test coverage, including edge cases and integration tests.
-- Used **React Context** for state management if multiple components needed access to shared data.
-- Broken down the application further into **multiple components** to promote reusability and separation of concerns.
-- Used **custom hooks** to encapsulate reusable logic, such as form handling or state management.
-
-By keeping the scope focused, I believe this sample effectively demonstrates my understanding of React fundamentals, state management, and TDD without overwhelming reviewers with unnecessary complexity.
-
 ## Features
 
 - Add new todos (limited to 40 characters).
@@ -82,3 +69,14 @@ npm test
 ## Styles
 
 The app uses a custom stylesheet (`styles.css`) for basic styling.
+
+## Design Decisions
+
+This code sample is intentionally kept short to align with the interview guidelines, which suggest keeping submissions concise and easy to review.
+
+If I had more freedom to expand, I would have:
+
+- Added more comprehensive test coverage, including edge cases and integration tests.
+- Used **React Context** for state management if multiple components needed access to shared data.
+- Broken down the application further into **multiple components** to promote reusability and separation of concerns.
+- Used **custom hooks** to encapsulate reusable logic, such as form handling or state management.
